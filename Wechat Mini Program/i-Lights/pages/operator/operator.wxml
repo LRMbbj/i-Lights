@@ -1,0 +1,38 @@
+<view class="page">
+    <view class="page__hd">
+        <text class="page__title" style="font-size:50rpx;">操作界面</text>
+    </view>
+    <view class="page__bd">
+      <view class="section section_gap">
+            <text class="section__title">示意图</text>
+            <view class="body-view">
+              <canvas canvas-id="myCanvas" style="width: 300px; height: 200px;margin: 5px; border:1px solid #d3d3d3;"  bindtouchstart="start" />
+            </view>
+        </view>
+        <view class="section section_gap">
+            <text class="section__title">垂直位置(mm)</text>
+            <view class="body-view">
+                <slider bindchange="zChange" max="299" show-value/>
+            </view>
+        </view>
+        <view class="section section_gap">
+            <text class="section__title">光圈(%)</text>
+            <view class="body-view">
+                <slider bindchange="fChange" max="100" show-value/>
+            </view>
+        </view>
+        <view class="section section_gap">
+            <view class="body-view">
+              <button class="weui-btn"  style="height:150rpx;display: flex;align-items: center;justify-content: center;font-size:50rpx"  type="primary" bindtap="update">上传</button>
+            </view>
+        </view>
+    </view>
+</view>
+<view style="height:50rpx"/>
+<view class="page">
+  <view class="section section_gap">
+    <view class="body-view">
+      <button class="weui-btn" type="{{stylebtn}}" style="font-size:50rpx" bindtap="switchLight">{{btntext}}</button>
+    </view>
+  </view>
+</view>
