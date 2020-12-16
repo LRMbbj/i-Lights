@@ -1,0 +1,55 @@
+<view class="page">
+	<view class="page__hd"></view><!--页头-->
+	<view class="page__bd">
+    <view class="weui-cells__title" style="font-size:50rpx;color:black">系统初始化</view>
+    <form bindsubmit="submitinit">
+      <view class="weui-cells weui-cells_after-title">
+        <!-- input -->
+        <view class="weui-cell ">
+            <view class="weui-cell__hd">
+                <view class="weui-label">桌面长度</view>
+                <input name="lengthinput" class="weui-input" placeholder="长度(mm)" type="number"/>
+            </view>
+            <view class="weui-cell__bd">
+                <view class="weui-label">桌面宽度</view>
+                <input name="widthinput" class="weui-input" placeholder="长度(mm)" type="number"/>
+            </view>
+        </view>
+        <view class="weui-cell ">
+            <view style="margin-right:20rpx">灯 No.1</view>
+            <view class="weui-cell__hd">
+                <view class="weui-label">X坐标</view>
+                <input name="x1input" class="weui-input" placeholder="长度(mm)" type="number"/>
+            </view>
+            <view class="weui-cell__hd">
+                <view class="weui-label">Y坐标</view>
+                <input name="y1input" class="weui-input" placeholder="长度(mm)" type="number"/>
+            </view>
+            <view class="weui-cell__hd">
+                <view class="weui-label">朝向</view>
+                <input name="d1input" class="weui-input" placeholder="角度(°)" type="number"/>
+            </view>
+        </view>
+        <view class="weui-cell ">
+            <view style="margin-right:20rpx">灯 No.2</view>
+            <view class="weui-cell__hd">
+                <view class="weui-label">X坐标</view>
+                <input name="x2input" class="weui-input" placeholder="长度(mm)" type="number"/>
+            </view>
+            <view class="weui-cell__hd">
+                <view class="weui-label">Y坐标</view>
+                <input name="y2input" class="weui-input" placeholder="长度(mm)" type="number"/>
+            </view>
+            <view class="weui-cell__hd">
+                <view class="weui-label">朝向</view>
+                <input name="d2input" class="weui-input" placeholder="角度(°)" type="number"/>
+            </view>
+        </view>  
+      </view>
+      <view style="margin:40rpx">
+        <button class="weui-btn" type="primary" formType="submit">确定</button>
+      </view>
+    </form>
+  </view><!--主体-->
+	<view></view>
+</view>
